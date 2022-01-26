@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Reports">
+   <children>
+      <HBox alignment="CENTER" layoutX="224.0" layoutY="6.0" prefHeight="65.0" prefWidth="354.0">
+         <children>
+            <Label text="Reports">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="TOP_RIGHT" layoutX="605.0" layoutY="6.0" prefHeight="65.0" prefWidth="196.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onActionMainMenu" text="Main menu">
+               <HBox.margin>
+                  <Insets right="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <TabPane layoutY="71.0" prefHeight="529.0" prefWidth="801.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Contact Schedule">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="contactScheduleTableView" layoutX="42.0" layoutY="138.0" prefHeight="310.0" prefWidth="717.0">
+                          <columns>
+                            <TableColumn fx:id="apptIDCol" prefWidth="102.0" text="Appointment ID" />
+                            <TableColumn fx:id="apptTitleCol" prefWidth="102.0" text="Title" />
+                              <TableColumn fx:id="apptTypeCol" prefWidth="102.0" text="Type" />
+                              <TableColumn fx:id="apptDescriptionCol" prefWidth="102.0" text="Description" />
+                              <TableColumn fx:id="apptStartCol" prefWidth="102.0" text="Start Date/Time" />
+                              <TableColumn fx:id="apptEndCol" prefWidth="103.0" text="End Date/Time" />
+                              <TableColumn fx:id="customerIDCol" prefWidth="102.0" text="Customer ID" />
+                          </columns>
+                        </TableView>
+                        <HBox alignment="CENTER_LEFT" layoutX="42.0" layoutY="85.0" prefHeight="53.0" prefWidth="715.0">
+                           <children>
+                              <Label text="Please select a contact:" />
+                              <ComboBox fx:id="contactCombo" onAction="#onActionSelectContact" prefHeight="21.0" prefWidth="170.0" promptText="Please select a contact.">
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="34.0" layoutY="20.0" prefHeight="80.0" prefWidth="721.0">
+                           <children>
+                              <Label text="Contact Schedule:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Customer Schedule">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <HBox alignment="CENTER_LEFT" layoutX="40.0" layoutY="14.0" prefHeight="80.0" prefWidth="721.0">
+                           <children>
+                              <Label text="Customer Schedule:">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="43.0" layoutY="90.0" prefHeight="53.0" prefWidth="715.0">
+                           <children>
+                              <Label text="Please select a customer:" />
+                              <ComboBox fx:id="customerCombo" onAction="#onActionPopulateCustomerTableView" prefHeight="21.0" prefWidth="170.0" promptText="select customer">
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </ComboBox>
+                              <Label text="Total number of customer appointments: ">
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="apptCountLbl">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <TableView fx:id="customerScheduleTableView" layoutX="42.0" layoutY="143.0" prefHeight="310.0" prefWidth="720.0">
+                           <columns>
+                              <TableColumn fx:id="customerNameCol" prefWidth="144.0" text="Customer Name" />
+                              <TableColumn fx:id="customerApptCol" prefWidth="144.0" text="Appointment Title" />
+                              <TableColumn fx:id="DescriptionCol" prefWidth="144.0" text="Description" />
+                              <TableColumn fx:id="StartCol" prefWidth="144.0" text="Start" />
+                              <TableColumn fx:id="EndCol" prefWidth="159.0" text="End" />
+                           </columns>
+                        </TableView>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+          <Tab text="Totals by Type/Month">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="478.0" prefWidth="801.0">
+                     <children>
+                        <HBox layoutX="88.0" layoutY="21.0" prefHeight="30.0" prefWidth="609.0">
+                           <children>
+                              <Label text="Total Number of Customer Appointments by Type and Month">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER_LEFT" layoutX="28.0" layoutY="58.0" prefHeight="57.0" prefWidth="725.0">
+                           <children>
+                              <Label text="View By Month:">
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <ComboBox fx:id="monthCombo" onAction="#onActionMonthCombo" onDragDropped="#onActionMonthCombo" prefWidth="150.0" promptText="Select a month">
+                                 <HBox.margin>
+                                    <Insets right="25.0" />
+                                 </HBox.margin></ComboBox>
+                              <Label text="Total number of appointments: ">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets right="15.0" />
+                                 </padding>
+                              </Label>
+                              <Label fx:id="totalApptsLbl">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets right="180.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Button mnemonicParsing="false" onAction="#onActionVIewAll" text="View All" />
+                           </children></HBox>
+                        <HBox layoutX="538.0" layoutY="108.0" prefHeight="42.0" prefWidth="262.0" />
+                        <HBox alignment="CENTER_LEFT" layoutX="538.0" layoutY="150.0" prefHeight="65.0" prefWidth="262.0">
+                           <padding>
+                              <Insets left="15.0" />
+                           </padding>
+                        </HBox>
+                        <TextArea fx:id="reportView" layoutX="28.0" layoutY="123.0" prefHeight="342.0" prefWidth="730.0">
+                           <font>
+                              <Font size="16.0" />
+                           </font></TextArea>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

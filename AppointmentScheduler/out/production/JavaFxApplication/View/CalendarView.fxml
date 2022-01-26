@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CalendarViewController">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="7.0" layoutY="27.0" prefHeight="69.0" prefWidth="279.0">
+         <children>
+            <Label text="Calendar View">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <TableView fx:id="calendarTableView" layoutX="13.0" layoutY="165.0" prefHeight="378.0" prefWidth="1080.0">
+        <columns>
+          <TableColumn fx:id="apptIDCol" minWidth="80.0" text="Appt ID" />
+          <TableColumn fx:id="apptTitleCol" minWidth="131.0" prefWidth="131.0" text="Title" />
+            <TableColumn fx:id="descriptionCol" minWidth="131.0" prefWidth="131.0" text="Description" />
+            <TableColumn fx:id="locationCol" minWidth="131.0" prefWidth="131.0" text="Location" />
+            <TableColumn fx:id="contactCol" minWidth="131.0" prefWidth="131.0" text="Contact" />
+            <TableColumn fx:id="typeCol" minWidth="131.0" prefWidth="131.0" text="Type" />
+            <TableColumn fx:id="startCol" minWidth="131.0" prefWidth="131.0" text="Start Date/Time" />
+            <TableColumn fx:id="endCol" minWidth="131.0" prefWidth="131.0" text="End Date/Time" />
+            <TableColumn fx:id="customerIDCol" minWidth="82.0" prefWidth="82.0" text="Customer ID" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER_LEFT" layoutX="13.0" layoutY="102.0" prefHeight="63.0" prefWidth="780.0">
+         <children>
+            <Label alignment="TOP_LEFT" text="View By:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="currentMonthRB" mnemonicParsing="false" onAction="#onActionVIewMonth" selected="true" text="Current Month">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <toggleGroup>
+                  <ToggleGroup fx:id="viewBy" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="currentWeekRB" mnemonicParsing="false" onAction="#onActionVIewWeek" text="Current Week" toggleGroup="$viewBy">
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </RadioButton>
+            <RadioButton fx:id="allRB" mnemonicParsing="false" onAction="#onActionViewAll" selected="true" text="All" toggleGroup="$viewBy">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </RadioButton>
+         </children>
+      </HBox>
+      <Button layoutX="377.0" layoutY="-98.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="994.0" layoutY="27.0" mnemonicParsing="false" onAction="#onActionMainMenu" text="Main Menu" />
+   </children>
+   <padding>
+      <Insets left="10.0" />
+   </padding>
+</AnchorPane>
