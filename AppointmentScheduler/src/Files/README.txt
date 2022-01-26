@@ -1,8 +1,8 @@
-QAM1 Performance Assessment
-Author: Tiffany Rolle
-E-mail: troll24@wgu.edu
 
-Application Title: Appointment Scheduler
+Author: Tiffany Rolle
+E-mail: tiffanyrolle387@gmail.com
+
+Application Title: Scheduling Solution
 Purpose: To provide a GUI based scheduling desktop application for use in a global consulting organization
 Version: v1.01
 Date: 9-11-2021
@@ -12,15 +12,6 @@ JDK version: JDK-11.0.1
 JAVAFX version: JavaFX-SDK-11.0.2
 My SQL Connector Version: mysql-connector-java 8.0.22
 
-Description of additional report:
-    A simplified schedule for each customer that provides the following information:
-        * customer name
-        * appointment title
-        * description
-        * start time/date
-        * end time/date
-        * total number of customer related appointments
-    The report displays in the user interface via tableview upon customer selection chosen (using a combo box).
 
 Directions to run the program:
 
@@ -57,8 +48,7 @@ Add/Modify Screens:
     this view will permanently delete that appointment.
 
 
-I really enjoyed making this program and hope you find it suitable. I used information found in the Java 8 API documents
-provided by Oracle to implement solutions needed to meet the project requirements.
+
 
 
 
