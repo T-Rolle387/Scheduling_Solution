@@ -1,8 +1,6 @@
 # Scheduling_Solution
-International appointment scheduling solution designed to cross-check time zones and deliver individualized reports.
+GUI based international appointment scheduling solution designed to cross-check time zones and deliver individualized reports for a hypothetical consulting agency.
 
-Application Title: Scheduling Solution
-Purpose: To provide a GUI based scheduling desktop application for use in a global consulting organization
 Version: v1.01
 Date: 9-11-2021
 
