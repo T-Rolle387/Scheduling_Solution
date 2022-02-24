@@ -13,8 +13,17 @@ My SQL Connector Version: mysql-connector-java 8.0.22
 Directions to run the program:
 
 Login:
-    Upon pressing play the Login Screen will appear. Log in using provided username and password "test" and pressing the
+    Upon pressing play the Login Screen will appear. The Login screen will automatically translate to English or French based on the user's OS language preference.
+    Log in using provided username and password "test" and pressing the
     login button provided. To clear a selection click "Clear" and to exit the program click the "Exit" button.
+    
+    Screenshot of Login Screen in English:
+    
+    ![login](https://user-images.githubusercontent.com/79055002/155594503-cf849dc5-8143-4734-993d-bb1e8792ed35.png)
+
+    Screenshot of Login Screen in French:
+    
+![Capture d’écran (13)](https://user-images.githubusercontent.com/79055002/155594460-661afda3-0659-485b-bbc8-b6ccb32305a3.png)
 
 Main Menu:
     Buttons provided will take you to the different labeled options. To delete a customer or appointment, simply select
