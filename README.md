@@ -40,20 +40,41 @@ Main Menu:
 
 Main Menu screenshot provided:
 
+![main_menu](https://user-images.githubusercontent.com/79055002/155595982-ccf4c59d-254c-47a3-9ef8-d2dc0d8fc9ef.png)
+
 
 Reports:
     Navigate through reports using the labeled tabs provided.
     Customer Schedule:
     Select a customer using the combo box provided to view a summarized customer schedule.
+    
+    Customer schedule screenshot provided:
+    
+   ![customer_schedule](https://user-images.githubusercontent.com/79055002/155596084-f1b9786d-dd79-48f3-b2cd-07d5e9d0d66c.png)
+
     Contact Schedule:
     Select a contact using the combo box provided to view a summarized contact schedule.
+    
+    Contact schedule screenshot provided:
+    
+   ![contact_schedule](https://user-images.githubusercontent.com/79055002/155596187-a784a38f-ad65-4f3e-bd3e-6df68800c1c6.png)
+
+    
     Totals by Type/Month:
     Initially totals for all appointments appear. To filter these totals by month select the month for the totals you
     wish to view using the provided combo box. A "View All" button is provided to view all appointments.
+    
+    Totals by Type/Month screenshot provided:
+   ![appointment_totals](https://user-images.githubusercontent.com/79055002/155596319-33a6f5e7-3c1e-497b-9243-56364b961041.png)
+
 
 Calendar View:
     This view provides a larger, easier to view table of all appointments that allows you to filter the appointments by
     current week and month by selecting one of the labeled radio buttons.
+    
+    Calendar view screenshot provided:
+    
+![calendar_view](https://user-images.githubusercontent.com/79055002/155596398-dca5922a-14a4-4376-9ab1-885ca641f9a7.png)
 
 Add/Modify Screens:
     Please fill out all forms, combo boxes, and date selections via date picker provided and click "Save". To view
@@ -61,3 +82,21 @@ Add/Modify Screens:
 
     Note: The modify screen for customers has a simplified view of associated appointments. Deleting an appointment from
     this view will permanently delete that appointment.
+    
+ Add customer screen:
+ 
+![add_customer_screen](https://user-images.githubusercontent.com/79055002/155596469-eef4fe4f-3c2c-40d6-be24-894c4ec35938.png)
+
+Modify customer screen:
+
+![modify_customer_screen](https://user-images.githubusercontent.com/79055002/155596538-a3a2fabb-f1c7-424d-9ba2-7c8b701b5ff4.png)
+
+Add appointment screen:
+
+![add_new_appointment](https://user-images.githubusercontent.com/79055002/155596587-a842dfe8-5a2f-4e3f-b0e3-431571e63031.png)
+
+Modify appointment screen:
+
+![modify_appointment](https://user-images.githubusercontent.com/79055002/155596626-60199fe8-b381-4e8a-8dfb-8a00b63eb5a6.png)
+
+
