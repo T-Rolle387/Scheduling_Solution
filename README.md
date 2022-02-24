@@ -19,11 +19,17 @@ Login:
     
     Screenshot of Login Screen in English:
     
-    ![login](https://user-images.githubusercontent.com/79055002/155594503-cf849dc5-8143-4734-993d-bb1e8792ed35.png)
+  ![login](https://user-images.githubusercontent.com/79055002/155594868-ad205961-7f60-4c9a-ac2a-70622ed54fed.png)
+  
 
     Screenshot of Login Screen in French:
     
 ![Capture d’écran (13)](https://user-images.githubusercontent.com/79055002/155594460-661afda3-0659-485b-bbc8-b6ccb32305a3.png)
+
+    All login attempts are recorded in a .txt file:
+
+
+![login_attempt_log](https://user-images.githubusercontent.com/79055002/155594988-bef6b843-93a6-41d2-b71e-20d88b568d83.png)
 
 Main Menu:
     Buttons provided will take you to the different labeled options. To delete a customer or appointment, simply select
@@ -31,6 +37,9 @@ Main Menu:
     associated with that customer. To delete an appointment simply select that appointment in the tableview and click
     "Delete". To modify or add a customer or appointment select that customer/appointment in the table button and click
     the "Add" or "Modify" button.
+
+Main Menu screenshot provided:
+
 
 Reports:
     Navigate through reports using the labeled tabs provided.
