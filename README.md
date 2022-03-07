@@ -19,8 +19,7 @@ Login:
     
     Screenshot of Login Screen in English:
     
-  ![login](https://user-images.githubusercontent.com/79055002/155594868-ad205961-7f60-4c9a-ac2a-70622ed54fed.png)
-  
+![Screenshot 2022-03-07 175438](https://user-images.githubusercontent.com/79055002/157132115-b5f65355-5e38-4a73-a05d-3a987f595a55.png)
 
     Screenshot of Login Screen in French:
     
