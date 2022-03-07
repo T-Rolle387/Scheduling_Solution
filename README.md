@@ -40,8 +40,7 @@ Main Menu:
 
 Main Menu screenshot provided:
 
-![main_menu](https://user-images.githubusercontent.com/79055002/155595982-ccf4c59d-254c-47a3-9ef8-d2dc0d8fc9ef.png)
-
+![Screenshot 2022-03-07 175438](https://user-images.githubusercontent.com/79055002/157131962-0dc8f43f-ffb9-4bd1-8a5a-1fcb201274f1.png)
 
 Reports:
     Navigate through reports using the labeled tabs provided.
